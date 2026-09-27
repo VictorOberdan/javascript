@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 01</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Teste</h1>
+            <div id="grid">
+                <div class="quadro primeiro"></div>
+                <div class="quadro segundo"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var primeiro = window.document.querySelector('div.primeiro')
+        var segundo = window.document.querySelector('div.segundo')
+        var texto = window.document.querySelector('h1')
+        primeiro.addEventListener('mouseenter', entrarpr)
+        primeiro.addEventListener('mouseout', sairpr)
+        segundo.addEventListener('mouseenter', entrarsg)
+        segundo.addEventListener('mouseout', sairsg)
+        function entrarpr() {
+            primeiro.style.background = 'blue'
+            texto.innerHTML = 'Você está no primeiro quadrado!'
+        } 
+        function entrarsg() {
+            segundo.style.background = 'green'
+            texto.innerHTML = 'Você está no segundo quadrado!'
+        } 
+        function sairpr() {
+            primeiro.style.background = 'green'
+        } 
+        function sairsg() {
+            segundo.style.background = 'blue'
+        } 
+    </script>
+</body>
+</html>
