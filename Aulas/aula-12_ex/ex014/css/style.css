@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: rgb(70, 142, 236);
     font: normal 15pt Arial;
@@ -6,19 +11,33 @@ body {
 header {
     color: white;
     text-align: center;
+    padding: 50px;
 }
 
 section {
     background: white;
     border-radius: 10px;
-    padding: 15px;
-    width: 500px;
     margin: auto;
+    padding: 15px;
+    width: 600px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
+}
+
+#msg {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 15px;
 }
 
 footer {
     color: white;
     text-align: center;
     font-style: italic;
+    padding: 20px;
+}
+
+
+
+div {
+    text-align: center;
 }
